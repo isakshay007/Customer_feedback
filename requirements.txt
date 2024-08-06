@@ -45,7 +45,7 @@ langsmith==0.0.92
 litellm==1.37.19
 llama-index==0.5.5
 llmsherpa==0.1.4
-lyzr==0.1.42
+lyzr==0.1.31
 lyzr-automata==0.1.3
 markdown-it-py==3.0.0
 MarkupSafe==2.1.5
