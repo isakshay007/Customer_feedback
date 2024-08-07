@@ -48,7 +48,7 @@ kiwisolver==1.4.5
 langchain==0.0.339
 langsmith==0.0.92
 litellm==1.2.0
-llama-index==0.9.4
+llama-index==0.4.5
 llmsherpa==0.1.4
 lyzr==0.1.38
 lyzr-automata==0.1.3
