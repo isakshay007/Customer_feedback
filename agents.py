@@ -28,9 +28,10 @@ def create_env():
     }
 
     response = requests.request("POST", url, headers=headers, data=payload)
-
-    return json.loads(response.text)['env_id']
-
+    result=response.json()
+    print(result)
+    return result['env_id']
+     
 
 def create_agent(env_id, system_prompt, agent_name, agent_persona):
     url = "https://demo.dev.app.lyzr.ai/agent/"
@@ -48,8 +49,10 @@ def create_agent(env_id, system_prompt, agent_name, agent_persona):
     }
 
     response = requests.request("POST", url, headers=headers, data=payload)
-
-    return json.loads(response.text)['agent_id']
+    
+    result=response.json()
+    print(result)
+    return result['agent_id']
 
 
 def create_task(user_id, agent_id, session_id, message):
@@ -66,5 +69,13 @@ def create_task(user_id, agent_id, session_id, message):
     }
 
     response = requests.request("POST", url, headers=headers, data=payload)
+    
+    result=response.json()
+    print(result)
+    return result['response']
 
-    return json.loads(response.text)['response']
+
+if __name__ == "__main__":
+    id=create_env()
+    print(id)
+    
